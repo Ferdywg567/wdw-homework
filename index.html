@@ -188,7 +188,7 @@
     </section>
     <!-- About Section-->
     <section class="page-section bg-primary text-white mb-0" id="event">
-        <div class="container">
+        <div class="mx-5 px-5">
             <!-- About Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-white">News & Event</h2>
             <!-- Icon Divider-->
@@ -214,6 +214,24 @@
 							<img src="assets/img/event/event2.jpg" class="card-img-top w-100" alt="Our Event" style="height: 449px;">
 							<div class="card-body text-dark">
 								<h4 class="my-3">An Event2</h4>
+								<p class="card-text pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper euismod tellus, ut lobortis odio ullamcorper et. Quisque ullamcorper lorem non risus gravida, ac tincidunt erat posuere. Proin volutpat mattis velit, vitae maximus ipsum tempus pulvinar.</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card" style="border: 0;">
+							<img src="assets/img/event/event1.jpg" class="card-img-top w-100" alt="Our Event" style="height: 449px;">
+							<div class="card-body text-dark">
+								<h4 class="my-3">An Event3</h4>
+								<p class="card-text pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper euismod tellus, ut lobortis odio ullamcorper et. Quisque ullamcorper lorem non risus gravida, ac tincidunt erat posuere. Proin volutpat mattis velit, vitae maximus ipsum tempus pulvinar.</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="card" style="border: 0;">
+							<img src="assets/img/event/event2.jpg" class="card-img-top w-100" alt="Our Event" style="height: 449px;">
+							<div class="card-body text-dark">
+								<h4 class="my-3">An Event4</h4>
 								<p class="card-text pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper euismod tellus, ut lobortis odio ullamcorper et. Quisque ullamcorper lorem non risus gravida, ac tincidunt erat posuere. Proin volutpat mattis velit, vitae maximus ipsum tempus pulvinar.</p>
 							</div>
 						</div>
@@ -592,7 +610,7 @@
 			},
         });
 		var swiper2 = new Swiper(".mySwiper2", {
-			slidesPerView: 2,
+			slidesPerView: 3,
 			spaceBetween: 50,
 			grabCursor: true,
 			loop: true,
@@ -600,8 +618,25 @@
 				delay: 5000,
 				disableOnInteraction: false,
 			},
+			breakpoints: {
+				"@0.00": {
+					slidesPerView: 1,
+					spaceBetween: 10,
+				},
+				"@0.75": {
+					slidesPerView: 1,
+					spaceBetween: 20,
+				},
+				"@1.00": {
+					slidesPerView: 2,
+					spaceBetween: 40,
+				},
+				"@1.50": {
+					slidesPerView: 3,
+					spaceBetween: 50,
+				},
+			},
         });
     </script>
 </body>
-
 </html>
